@@ -1,5 +1,5 @@
 /* X-Small devices (portrait phones, less than 576px)  */
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
     .header {
         font-size: 16px;
         text-align: center;
@@ -26,7 +26,7 @@
     }
 
     .influencer {
-        width: 582px;
+        width: 100%;
         height: 270px;
         margin-left: 0px;
         display: flex;
@@ -37,12 +37,11 @@
 
     .button-style {
         display: flex;
-        justify-content: flex-start;
-        margin-left: 295px;
-    }
+        justify-content: end;
+        width: 395px;
     }
 
-    .img {
+    .img{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,8 +56,19 @@
         justify-content: center;
     }
 
+    .product {
+        width: 329px;
+        height: 520px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+        border-radius: 5px;
+        margin-right: 0px;
+    }
+
     .about-influen {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .guide {
@@ -66,11 +76,6 @@
         height: 300px;
         border-radius: 24px;
         margin-bottom: 25px;
-    }
-
-    .influencer img {
-        display: flex;
-        justify-content: center;
     }
 
     .influencer-info {
@@ -87,22 +92,5 @@
         text-align: center;
         color: white;
         margin-top: 15px;
-
-
     }
-
-    /* Small devices (landscape phones, less than 768px) */
-    @media (min-width: 576px) and (max-width: 767.98px) {}
-
-    /* Medium devices (tablets, less than 992px) */
-    @media (min-width: 768px) and (max-width: 991.98px) {}
-
-    /* Large devices (desktops, less than 1200px) */
-    @media (min-width: 992px) and (max-width: 1199.98px) {}
-
-    /* X-Large devices (large desktops, less than 1400px) */
-    @media (min-width: 1200px) and (max-width: 1399.98px) {}
-
-    /* // XX-Large devices (larger desktops)
-// No media query since the xxl breakpoint has no upper bound on its width */
-    @media (min-width: 1400px) {}
+}
